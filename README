@@ -1,0 +1,32 @@
+Current Version: 1.0
+
+Configuration:
+------------
+
+- Register an API key from https://www.rekognition.com/register/, and you will receive API key and secret by email.
+
+- Edit account information in config.php under Path/to/Project/Rekognition/:
+   
+  $rekognition_api_key = 'YOUR_API_KEY';
+  $rekognition_api_secret = 'YOUR_SECRET';
+  
+- Setup API callbacks   
+
+  $rekognition_jobs = 'face_part_gender_emotion_age_glass_mouth,scene';
+  $rekognition_name_space = '';
+  $rekognition_user_id = '';
+  
+  API classes are separated by ',', and subclasses are separated by '_'. $rekognition_name_space and $rekognition_user_id are used when you need facial recognition function.
+
+- Now check whether Rekognition API has been successfully configured by running our two examples:
+
+  - Analyze image and draw detected faces
+    http://www.example.com/rekognition/example/Image_Request_Example.php and
+    
+  - Parse image analysis results (JSON) from Rekognition server
+    print out face, e.g, age, smile or not, male or female, with glass or not, etc,
+    and scene information, e.g. indoor, beach, etc.
+    
+    http://www.example.com/rekognition/example/Parser_Example.php
+
+  If your webpage prints out all the information successfully, congratulations! You could use Rekognition API in ANY of your PHP code now.
