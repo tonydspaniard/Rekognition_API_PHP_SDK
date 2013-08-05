@@ -1,4 +1,4 @@
-Rekognition_API_PHP_SDK Current Version: 1.0
+Current Version: 1.0
 =======================
 
 The folder contains our PHP SDKs and simple examples to demo the SDK.
@@ -7,8 +7,8 @@ The SDK contains the following functions:
 
 // ReKognition Face Detect Function (the image you want to recognize the image)
 
-public function RkFaceDetect($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
-                              
+<pre><code>public function RkFaceDetect($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 // ReKognition Face Add Function
 
 public function RkFaceAdd($req, $name, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
