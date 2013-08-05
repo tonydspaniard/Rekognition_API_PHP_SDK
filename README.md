@@ -80,16 +80,20 @@ Configuration:
 <li> Register an API Key from https://www.rekognition.com/register/, and you will receive API key and secret by email.</li>
 <li> Use your own API Key, Secret, Name space and User id in config.php </li>
 
+<pre><code>
 $rekognition_api_key = '1234';
 $rekognition_api_secret = '5678';
 $rekognition_name_space = '';
 $rekognition_user_id = ''; 
-</ol>
+</code></pre>
 
+</ol>
 The ReKo SDK example:
 =======================
-(a) Image Request Example: Require the server with example/dataset and get the result back;
 
-(b) Recognize the image using the our face detection and scene understanding functions;
+<ol>
+<li>Image Request Example: Require the server with example/dataset and get the result back; </li>
+<li>Recognize the image using the our face detection and scene understanding functions; </li>
+</ol>
 
 For any questions, please contact eng@orbe.us
