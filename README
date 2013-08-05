@@ -1,32 +1,67 @@
-Current Version: 1.0
+Current Version: 1.
+================================
+
+The folder contains our PHP SDKs and simple examples to demo the SDK.
+
+The SDK contains the following functions:
+
+// ReKognition Face Detect Function (the image you want to recognize the image)
+
+public function RkFaceDetect($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+                              
+// ReKognition Face Add Function
+
+public function RkFaceAdd($req, $name, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+                            
+// ReKognition Face Train Function
+
+public function RkFaceTrain($return_mode = Rekognition_API::RETURN_JSON);
+
+// ReKognition Face Recognize Function
+
+public function RkFaceRecognize($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+
+// ReKognition Face Rename Function
+
+public function RkFaceRename($tag, $new_tag, $return_mode = Rekognition_API::RETURN_JSON);
+
+// ReKognition Face Crawl Function
+
+public function RkFaceCrawl($access_token,$fb_id,$friend_id,$return_mode = Rekognition_API::RETURN_JSON);
+                              
+// ReKognition Face Visualize Function
+
+public function RkFaceVisualize($name_list, $return_mode = Rekognition_API::RETURN_JSON);
+                              
+// ReKognition Face Search Function
+
+public function RkFaceSearch($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+                              
+// ReKognition Face Delete Function
+
+public function RkFaceDelete($name, $id_list, $return_mode = Rekognition_API::RETURN_JSON);
+                              
+// ReKognition Face Stats Function
+
+public function RkFaceStats($return_mode = Rekognition_API::RETURN_JSON);
+
+// ReKognition Scene Understadning Function
+
+public function RkSceneUnderstanding($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
 
 Configuration:
-------------
+(a) Register an API Key from https://www.rekognition.com/register/, and you will receive API key and secret by email.
 
-- Register an API key from https://www.rekognition.com/register/, and you will receive API key and secret by email.
+(b) Use your own API Key, Secret, Name space and User id in config.php
 
-- Edit account information in config.php under Path/to/Project/Rekognition/:
-   
-  $rekognition_api_key = 'YOUR_API_KEY';
-  $rekognition_api_secret = 'YOUR_SECRET';
-  
-- Setup API callbacks   
+$rekognition_api_key = '1234';
+$rekognition_api_secret = '5678';
+$rekognition_name_space = '';
+$rekognition_user_id = ''; 
 
-  $rekognition_jobs = 'face_part_gender_emotion_age_glass_mouth,scene';
-  $rekognition_name_space = '';
-  $rekognition_user_id = '';
-  
-  API classes are separated by ',', and subclasses are separated by '_'. $rekognition_name_space and $rekognition_user_id are used when you need facial recognition function.
+The ReKo SDK example:
+(a) Image Request Example: Require the server with example/dataset and get the result back;
 
-- Now check whether Rekognition API has been successfully configured by running our two examples:
+(b) Recognize the image using the our face detection and scene understanding functions;
 
-  - Analyze image and draw detected faces
-    http://www.example.com/rekognition/example/Image_Request_Example.php and
-    
-  - Parse image analysis results (JSON) from Rekognition server
-    print out face, e.g, age, smile or not, male or female, with glass or not, etc,
-    and scene information, e.g. indoor, beach, etc.
-    
-    http://www.example.com/rekognition/example/Parser_Example.php
-
-  If your webpage prints out all the information successfully, congratulations! You could use Rekognition API in ANY of your PHP code now.
+For any questions, please contact tqliu@orbe.us
