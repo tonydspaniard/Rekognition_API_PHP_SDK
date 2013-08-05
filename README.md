@@ -5,49 +5,70 @@ The folder contains our PHP SDKs and simple examples to demo the SDK.
 
 The SDK contains the following functions:
 
-// ReKognition Face Detect Function (the image you want to recognize the image)
+// ReKognition Face Detect Function
 
-<pre><code>public function RkFaceDetect($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+<pre><code>public function RkFaceDetect($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED,
+                            $return_mode = Rekognition_API::RETURN_JSON);
 </code></pre>
+
 // ReKognition Face Add Function
 
-public function RkFaceAdd($req, $name, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
-                            
+<pre><code>public function RkFaceAdd($req, $name, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, 
+                            $return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
+
 // ReKognition Face Train Function
 
-public function RkFaceTrain($return_mode = Rekognition_API::RETURN_JSON);
+<pre><code>public function RkFaceTrain($return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 
 // ReKognition Face Recognize Function
 
+<pre><code>
 public function RkFaceRecognize($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 
 // ReKognition Face Rename Function
 
+<pre><code>
 public function RkFaceRename($tag, $new_tag, $return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 
 // ReKognition Face Crawl Function
 
+<pre><code>
 public function RkFaceCrawl($access_token,$fb_id,$friend_id,$return_mode = Rekognition_API::RETURN_JSON);
-                              
+</code></pre>
+
 // ReKognition Face Visualize Function
 
+<pre><code>
 public function RkFaceVisualize($name_list, $return_mode = Rekognition_API::RETURN_JSON);
-                              
+</code></pre>
+
 // ReKognition Face Search Function
 
+<pre><code>
 public function RkFaceSearch($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
-                              
+</code></pre>
+
 // ReKognition Face Delete Function
 
+<pre><code>
 public function RkFaceDelete($name, $id_list, $return_mode = Rekognition_API::RETURN_JSON);
-                              
+</code></pre>
+
 // ReKognition Face Stats Function
 
+<pre><code>
 public function RkFaceStats($return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 
 // ReKognition Scene Understadning Function
 
+<pre><code>
 public function RkSceneUnderstanding($req, $scale, $request_mode = Rekognition_API::REQUEST_UNDEFINED, $return_mode = Rekognition_API::RETURN_JSON);
+</code></pre>
 
 Configuration:
 =======================
