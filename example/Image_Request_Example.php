@@ -21,16 +21,17 @@ require_once '../config.php';
 require_once '../Rekognition_API.php';
 require_once '../Rekognition_GUI.php';
 
-echo "Before analyzing:<br><br><img src='dataset/test.jpg'></img><br><br>";
+echo "Before analyzing:<br><br><img src='dataset/test2.jpg'></img><br><br>";
 
 $dir = "dataset/test.jpg";
 
 global $rekognition;
-$parsed_obj = $rekognition->GetMetadata($dir, Rekognition_API::REQUEST_DIR, Rekognition_API::RETURN_PARSED);
+$resize_factor = 0.5;
+$parsed_obj = $rekognition->RkFaceDetect($dir, $resize_factor, Rekognition_API::REQUEST_DIR, Rekognition_API::RETURN_PARSED);
 
 global $orbgui;
 $orbgui->SetImage($dir);
-$orbgui->DrawObjects($parsed_obj->GetFaces());
+$orbgui->DrawObjects($parsed_obj->GetFaces(), $resize_factor);
 
 $base64_str = base64_encode($orbgui->GetImage());
 echo "After analyzing:<br><br><img src='data:image/jpeg;base64,".$base64_str."' /><br><br>";
