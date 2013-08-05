@@ -1,7 +1,8 @@
 Current Version: 1.0
 =======================
 
-The folder contains our ReKognition PHP SDKs and simple examples to demo the SDK.
+The folder contains our ReKognition PHP SDKs and simple examples to demo the SDK. For more information about our ReKognition API, please read our 
+<a href="http://v2.rekognition.com/developer/docs">documentation</a>.
 
 The SDK contains the following functions:
 
@@ -80,8 +81,7 @@ Configuration:
 <li> Register an API Key from https://www.rekognition.com/register/, and you will receive API key and secret by email.</li>
 <li> Use your own API Key, Secret, Name space and User id in config.php </li>
 
-<pre><code>
-$rekognition_api_key = '1234';
+<pre><code>$rekognition_api_key = '1234';
 $rekognition_api_secret = '5678';
 $rekognition_name_space = '';
 $rekognition_user_id = ''; 
@@ -91,9 +91,9 @@ $rekognition_user_id = '';
 The ReKo SDK example:
 =======================
 
-<ol>
+<ul>
 <li>Image Request Example: Require the server with example/dataset and get the result back; </li>
 <li>Recognize the image using the our face detection and scene understanding functions; </li>
-</ol>
+</ul>
 
 For any questions, please contact eng@orbe.us
