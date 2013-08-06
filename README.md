@@ -1,7 +1,8 @@
 Current Version: 1.0
 =======================
 
-The folder contains our ReKognition PHP SDKs and simple examples to demo the SDK. For more information about our ReKognition API, please read our 
+This ReKognition PHP SDK is intent for developers who want to integrate ReKognition API into their 
+websites. The folder contains our ReKognition PHP SDKs and simple examples to demo the SDK. For more information about our ReKognition API, please read our 
 <a href="http://v2.rekognition.com/developer/docs">documentation</a>.
 
 The SDK contains the following functions:
@@ -88,7 +89,7 @@ $rekognition_user_id = '';
 </code></pre>
 
 </ol>
-The ReKo SDK example:
+Example:
 =======================
 
 <ul>
