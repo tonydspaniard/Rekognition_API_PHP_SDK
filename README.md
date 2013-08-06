@@ -79,7 +79,7 @@ Configuration:
 =======================
 
 <ol>
-<li> Register an API Key from https://www.rekognition.com/register/, and you will receive API key and secret by email.</li>
+<li> Click <a href="http://v2.rekognition.com/user/create">here</a> to register a ReKognition account, and you will receive the API key and secret by email.</li>
 <li> Use your own API Key, Secret, Name space and User id in config.php </li>
 
 <pre><code>$rekognition_api_key = '1234';
